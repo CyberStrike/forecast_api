@@ -20,7 +20,7 @@
 <p>	<%= @forecast.currently.summary %> </p>
 
 <h3> Conditions for the Next Hour </h3>
-<p>	<%= @forecast.minutely.summary %> </p>
+<p>	<%= @forecast.minutely.try :summary %> </p>
 
 <h3> Daily Summary </h3>
 <p>	<%= @forecast.hourly.summary %> </p>
