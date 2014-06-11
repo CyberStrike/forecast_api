@@ -1,16 +1,32 @@
 class ForecastController < ApplicationController
 
-	def index
-
 		require 'forecast_io'
 		require 'typhoeus/adapters/faraday'
+		require 'geocoder'
 
-		ForecastIO.api_key = '545bc8ee1ee9907df971316c7968014a'
+	def index
 
-		@forecast = ForecastIO.forecast(37.8267, -122.423)
+  	city = request.location
+  	userSearch = params[:q]
 
-		# @forecast = ForecastIO.forecast(37.8267, -122.423, time: Time.now
+	  	if userSearch
+	 		# the geocoder is searching for city
+	    	geocoder = Geocoder.search userSearch
+	    else
+	    	geocoder = Geocoder.search city	
+	   	end
 
-	end
+	   	if geocoder
 
+   		lat = location[0].geometry["location"]["lat"]
+  		
+  		lng = location[0].geometry["location"]["lng"]
+
+  		ForecastIO.api_key = '545bc8ee1ee9907df971316c7968014a'
+
+			@forecast = ForecastIO.forecast(lat, lng)
+
+  		end    
+  end
+  
 end

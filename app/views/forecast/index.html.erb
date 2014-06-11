@@ -1,5 +1,17 @@
 <h1>Forecast</h1>
 
+<%= form_for("weather/index", method: "post") do %>
+  <%= label_tag(:q, "Search for:") %>
+  <%= text_field_tag(:q) %>
+  <%= submit_tag("Search") %>
+<% end %>
+
+<% if @forecast.nil? %>
+
+<p> Enter Info </p>
+
+<% else %>
+
 <h3> Country, Timezone </h3>
 <p>	<%= @forecast.timezone %> </p>
 
@@ -23,3 +35,5 @@
 
 <h3> Longitude </h3>
 <p>	<%= @forecast.longitude %> </p>
+
+<% end %>

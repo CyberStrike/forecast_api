@@ -54,6 +54,7 @@ GEM
       faraday
       hashie
       multi_json
+    geocoder (1.2.1)
     hashie (3.0.0)
     hike (1.2.3)
     httparty (0.13.1)
@@ -141,6 +142,7 @@ DEPENDENCIES
   binding_of_caller
   coffee-rails (~> 4.0.0)
   forecast_io
+  geocoder
   httparty
   jbuilder (~> 2.0)
   jquery-rails

@@ -35,6 +35,7 @@ gem 'forecast_io'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 gem 'typhoeus'
+gem 'geocoder'
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 group :development do
