@@ -1,0 +1,25 @@
+<h1>Forecast</h1>
+
+<h3> Country, Timezone </h3>
+<p>	<%= @forecast.timezone %> </p>
+
+<h3> Current Condition </h3>
+<p>	<%= @forecast.currently.summary %> </p>
+
+<h3> Conditions for the Next Hour </h3>
+<p>	<%= @forecast.minutely.summary %> </p>
+
+<h3> Daily Summary </h3>
+<p>	<%= @forecast.hourly.summary %> </p>
+
+<h3> Weekly Summary </h3>
+<p>	<%= @forecast.daily.summary %> </p>
+
+<h3> Longitude </h3>
+<p>	<%= @forecast.longitude %> </p>
+
+<h3> Latitude </h3>
+<p>	<%= @forecast.latitude %> </p>
+
+<h3> Longitude </h3>
+<p>	<%= @forecast.longitude %> </p>
