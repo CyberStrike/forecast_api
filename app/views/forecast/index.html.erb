@@ -31,6 +31,9 @@
     	<div class="container">
 
 			<h3> Country, Timezone </h3>
+			<span class="<%= @forecast.currently.icon %>"></span>
+
+	
 				<p>	<%= @forecast.timezone %> </p>
 
 			<h3> Current Condition </h3>
@@ -51,6 +54,8 @@
 			<h3> Latitude </h3>
 				<p>	<%= @forecast.latitude %> </p>
 
+			<h3> Icon </h3>
+				<p>	<%= @forecast.currently.icon %> </p>
 			
 		</div>
 	
