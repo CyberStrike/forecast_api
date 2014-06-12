@@ -1,38 +1,38 @@
-.wi-clear-day:before {
+.clear-day:before {
   content:"\f00d";
 }
-.wi-clear-night:before {
+.clear-night:before {
   content:"\f078";
 }
-.wi-rain:before {
+.rain:before {
   content:"\f008";
 }
-.wi-snow:before {
+.snow:before {
   content:"\f00a";
 }
-/*.wi-snow{
+/*.snow{
   background-color:red;
 } still picks up the wi-snow:before rule*/
 
-.wi-sleet:before {
+.sleet:before {
   content:"\f068";
 }
-.wi-wind:before {
+.wind:before {
   content:"\f001";
 }
-.wi-fog:before {
+.fog:before {
   content:"\f014"
 }
-.wi-cloudy:before{
+.cloudy:before{
   content:"\f013"
 }
-.wi-hail:before{
+.hail:before{
   content:"\f015"
 }
-.wi-thunderstorm:before{
+.thunderstorm:before{
   content:"\f01e"
 }
-.wi-tornado:before{
+.tornado:before{
   content:"\f056"
 }
 .partly-cloudy-day:before{
@@ -41,7 +41,7 @@
 .partly-cloudy-night:before{
   content:"\f083"
 }
-.wi-drizzle:before {
+.drizzle:before {
   content:"\f008"
 }
 /*

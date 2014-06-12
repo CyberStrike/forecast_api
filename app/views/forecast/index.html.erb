@@ -31,20 +31,14 @@
 
     	<div class="container">
 
-			<h3> Country, Timezone </h3>
-			<i id="icon"  class="<%= @forecast.currently.icon %> wi" ></i>
-
-
-				<p>	<%= @forecast.timezone %> </p>
-
-
-    <div class="container">
-
     	<div class="row">
 	    	<div class="col-md-4">
+          <i id="icon"  class="wi <%= @forecast.currently.icon %>" ></i>
+        <h3> Country, Timezone </h3>
+        <p>	<%= @forecast.timezone %> </p>
 
 				<h3> Current Condition </h3>
-						<p>	<%= @forecast.currently.summary %> </p> <span class="<%= @forecast.currently.icon %>"></span>
+						<p>	<%= @forecast.currently.summary %> </p> 
 
 				<h3> Conditions for the Next Hour </h3>
 						<p>	<%= @forecast.minutely.try :summary %> </p>
