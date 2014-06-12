@@ -10,7 +10,7 @@
     <form class="navbar-search pull-right">
 
     		<%= form_for(root_path, method: :get) do %>
-  			<%= text_field_tag :q, params[:q], placeholder: "Search for city" %>	
+  			<%= text_field_tag :q, params[:q], placeholder: "Search for City/State/Location" %>	
 <!--   			<%= submit_tag("Search", name: "") %>	
  -->		<% if @forecast.nil? %>
 		<p> Enter Info </p>
