@@ -1,0 +1,86 @@
+
+<!--Navbar-->
+<div class="navbar-inverse">
+  <div class="navbar-inner">
+    <a class="brand" href="/">
+    <%= image_tag "myforecast.png" %>
+    </a>
+    <ul class="nav">
+
+
+   </ul>
+   <a class="brand">
+    <form class="navbar-search pull-right">
+
+    		<%= form_for(root_path, method: :get) do %>
+  			<%= text_field_tag :q, params[:q], placeholder: "Search for City/State/Location" %>
+<!--   			<%= submit_tag("Search", name: "") %>
+ -->		<% if @forecast.nil? %>
+		<p> Enter Info </p>
+		<% else %>
+		<% end %>
+	</form>
+	</a>
+  </div>
+</div>
+
+
+
+<body>
+
+
+    	<div class="container">
+
+    	<div class="row">
+	    	<div class="col-md-4">
+          <center><i id="icon"  class="wi <%= @forecast.currently.icon %>" ></i></center>
+
+          <h3> Current Temperature </h3>
+						<p>	<%= @forecast.currently.apparentTemperature %> °F </p>
+			
+			<h3> Current Condition: <%= @forecast.currently.summary %> </h3>       
+        <hr>
+        		<h3> Country, Timezone </h3>
+        				<p>	<%= @forecast.timezone %> </p>
+        <hr>
+				<h3> Conditions for the Next Hour </h3>
+						<p>	<%= @forecast.minutely.try :summary %> </p>
+
+				<h3> Daily Summary </h3>
+						<p>	<%= @forecast.hourly.summary %> </p>
+
+
+			<h3> Conditions for the Next Hour </h3>
+				<p>	<%= @forecast.minutely.try :summary %> </p>
+
+			<h3> Daily Summary </h3>
+				<p>	<%= @forecast.hourly.summary %> </p>
+
+			<h3> Weekly Summary </h3>
+				<p>	<%= @forecast.daily.summary %> </p>
+
+			<h3> Longitude </h3>
+				<p>	<%= @forecast.longitude %> </p>
+
+			<h3> Latitude </h3>
+				<p>	<%= @forecast.latitude %> </p>
+
+			<h3> Icon </h3>
+				<p>	<%= @forecast.currently.icon %> </p>
+
+		</div>
+
+
+				<h3> Weekly Summary </h3>
+						<p>	<%= @forecast.daily.summary %> </p>
+
+
+			</div>
+		</div>
+	</div>
+
+</body>
+</div>
+
+
+<% end %>
