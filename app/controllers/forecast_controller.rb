@@ -11,16 +11,16 @@ class ForecastController < ApplicationController
 
 		if userSearch.blank?
 	 		# the geocoder is searching for city
-	 		geocoder = request.location
+	 		@geocoder = request.location
 	 	else
-	 		geocoder = Geocoder.search(userSearch).first
+	 		@geocoder = Geocoder.search(userSearch).first
 	 	end
 
-	 	unless geocoder.blank?
+	 	unless @geocoder.blank?
 
-	 		lat = geocoder.latitude # lat = geocoder[0].geometry["location"]["lat"]
+	 		lat = @geocoder.latitude # lat = geocoder[0].geometry["location"]["lat"]
 
-	 		lng = geocoder.longitude # lng = geocoder[0].geometry["location"]["lng"]
+	 		lng = @geocoder.longitude # lng = geocoder[0].geometry["location"]["lng"]
 
 	 		ForecastIO.api_key = '545bc8ee1ee9907df971316c7968014a'
 
