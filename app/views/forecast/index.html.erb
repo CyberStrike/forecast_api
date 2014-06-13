@@ -1,27 +1,25 @@
 
 <!--Navbar-->
-
 <div class="navbar-inverse">
   <div class="navbar-inner">
-    <div class="brand" href="/">
-    <%= image_tag "wynf2.png" %>
-    </div>
-    <ul class="nav">
-   </ul>
+    	<div class="brand" href="/">
+    	<%= image_tag "wynf2.png" %>
+    	</div>
+   			 <ul class="nav">
+   			</ul>
    <a class="brand">
-    <form class="navbar-search pull-right">
-
+    	<form class="navbar-search pull-right">
     		<%= form_for(root_path, method: :get) do %>
   			<%= text_field_tag :q, params[:q], placeholder: "Search for City/State/Location" %>
-		<% if @forecast.nil? %>
-		<p> Enter Info </p>
-		<% else %>
-		<% end %>
-	</form>
+			<% if @forecast.nil? %>
+			<p> Enter Info </p>
+			<% else %>
+			<% end %>
+		</form>
 	</a>
   </div>
 </div>
-
+<!--Navbar-->
 
 <div id="imageContainer">
 
