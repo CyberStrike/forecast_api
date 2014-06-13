@@ -619,22 +619,15 @@ a:focus {
   margin-right: auto;
   margin-left: auto;
   *zoom: 1;
-<<<<<<< HEAD
-
-=======
->>>>>>> d3007fc35d22160c1dc3867750387d1d7e49f3a2
 }
 
-.container:before,
+
 .container:after {
   display: table;
   line-height: 0;
   content: "";
 }
 
-.container:after {
-  clear: both;
-}
 
 .container-fluid {
   padding-right: 20px;
@@ -899,19 +892,11 @@ dd {
 }
 
 hr {
-<<<<<<< HEAD
   text-align:center; margin: 0 auto;
   border: 0;
   border-top: 1px solid #eeeeee;
   border-bottom: 1px solid #ffffff;
   width: 500px;
-
-=======
-  margin: 20px 0;
-  border: 0;
-  border-top: 1px solid #eeeeee;
-  border-bottom: 1px solid #ffffff;
->>>>>>> d3007fc35d22160c1dc3867750387d1d7e49f3a2
 }
 
 abbr[title],
@@ -3961,11 +3946,7 @@ input[type="submit"].btn.btn-mini {
 }
 
 .nav {
-<<<<<<< HEAD
-  margin-bottom: -64px;
-=======
   margin-bottom: 20px;
->>>>>>> d3007fc35d22160c1dc3867750387d1d7e49f3a2
   margin-left: 0;
   list-style: none;
 }
@@ -4434,11 +4415,7 @@ input[type="submit"].btn.btn-mini {
 .navbar .brand {
   display: block;
   float: left;
-<<<<<<< HEAD
-  padding: 0px 60px 0px;
-=======
   padding: 20px 60px 20px;
->>>>>>> d3007fc35d22160c1dc3867750387d1d7e49f3a2
   margin-left: -20px;
   font-size: 30px;
   font-weight: 200;
@@ -4453,11 +4430,7 @@ input[type="submit"].btn.btn-mini {
 
 .navbar-text {
   margin-bottom: 0;
-<<<<<<< HEAD
   line-height: 10px;
-=======
-  line-height: 40px;
->>>>>>> d3007fc35d22160c1dc3867750387d1d7e49f3a2
   color: #777777;
 }
 
@@ -4471,11 +4444,7 @@ input[type="submit"].btn.btn-mini {
 }
 
 .navbar .divider-vertical {
-<<<<<<< HEAD
-  height: 10px;
-=======
   height: 40px;
->>>>>>> d3007fc35d22160c1dc3867750387d1d7e49f3a2
   margin: 0 9px;
   border-right: 1px solid #ffffff;
   border-left: 1px solid #f2f2f2;
