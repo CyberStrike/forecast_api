@@ -619,7 +619,10 @@ a:focus {
   margin-right: auto;
   margin-left: auto;
   *zoom: 1;
+<<<<<<< HEAD
 
+=======
+>>>>>>> d3007fc35d22160c1dc3867750387d1d7e49f3a2
 }
 
 .container:before,
@@ -896,12 +899,19 @@ dd {
 }
 
 hr {
+<<<<<<< HEAD
   text-align:center; margin: 0 auto;
   border: 0;
   border-top: 1px solid #eeeeee;
   border-bottom: 1px solid #ffffff;
   width: 500px;
 
+=======
+  margin: 20px 0;
+  border: 0;
+  border-top: 1px solid #eeeeee;
+  border-bottom: 1px solid #ffffff;
+>>>>>>> d3007fc35d22160c1dc3867750387d1d7e49f3a2
 }
 
 abbr[title],
@@ -1096,11 +1106,11 @@ input[type="color"],
 .uneditable-input {
   display: inline-block;
   height: 20px;
-  padding: 4px 30px;
-  margin-bottom: 18px;
+  padding: px 60px;
+  margin-bottom: -28px;
   font-size: 14px;
   line-height: 20px;
-  color: #000000;
+  color: #555555;
   vertical-align: middle;
   -webkit-border-radius: 4px;
      -moz-border-radius: 4px;
@@ -3951,7 +3961,11 @@ input[type="submit"].btn.btn-mini {
 }
 
 .nav {
+<<<<<<< HEAD
   margin-bottom: -64px;
+=======
+  margin-bottom: 20px;
+>>>>>>> d3007fc35d22160c1dc3867750387d1d7e49f3a2
   margin-left: 0;
   list-style: none;
 }
@@ -4375,7 +4389,9 @@ input[type="submit"].btn.btn-mini {
 
 .navbar-inner {
   min-height: 0px;
-  padding-right: 20px;
+  padding-right: 80px;
+  padding-top: 10px;
+  padding-bottom: -10px;
   padding-left: 20px;
   background-color: #fafafa;
   background-image: -moz-linear-gradient(top, #ffffff, #f2f2f2);
@@ -4418,7 +4434,11 @@ input[type="submit"].btn.btn-mini {
 .navbar .brand {
   display: block;
   float: left;
+<<<<<<< HEAD
   padding: 0px 60px 0px;
+=======
+  padding: 20px 60px 20px;
+>>>>>>> d3007fc35d22160c1dc3867750387d1d7e49f3a2
   margin-left: -20px;
   font-size: 30px;
   font-weight: 200;
@@ -4433,7 +4453,11 @@ input[type="submit"].btn.btn-mini {
 
 .navbar-text {
   margin-bottom: 0;
+<<<<<<< HEAD
   line-height: 10px;
+=======
+  line-height: 40px;
+>>>>>>> d3007fc35d22160c1dc3867750387d1d7e49f3a2
   color: #777777;
 }
 
@@ -4447,7 +4471,11 @@ input[type="submit"].btn.btn-mini {
 }
 
 .navbar .divider-vertical {
+<<<<<<< HEAD
   height: 10px;
+=======
+  height: 40px;
+>>>>>>> d3007fc35d22160c1dc3867750387d1d7e49f3a2
   margin: 0 9px;
   border-right: 1px solid #ffffff;
   border-left: 1px solid #f2f2f2;
@@ -4516,7 +4544,7 @@ input[type="submit"].btn.btn-mini {
 .navbar-search {
   position: relative;
   float: left;
-  margin-top: 15px;
+  margin-top: -54px;
   margin-bottom: 0;
 }
 
@@ -4814,7 +4842,7 @@ input[type="submit"].btn.btn-mini {
 
 .navbar-inverse .brand,
 .navbar-inverse .nav > li > a {
-  padding: 10px 90px 10px;
+  padding: 0px 90px 10px;
   color: #999999;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
 }
