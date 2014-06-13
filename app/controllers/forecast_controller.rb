@@ -14,6 +14,7 @@ class ForecastController < ApplicationController
 	 		@geocoder = request.location
 	 	else
 	 		@geocoder = Geocoder.search(userSearch).first
+	 		@city = Geocoder.search(userSearch).first.address_components.first["long_name"]
 	 	end
 
 	 	unless @geocoder.blank?
@@ -25,6 +26,7 @@ class ForecastController < ApplicationController
 	 		ForecastIO.api_key = '545bc8ee1ee9907df971316c7968014a'
 
 	 		@forecast = ForecastIO.forecast(lat, lng)
+
 	 	end
 	 end
 
