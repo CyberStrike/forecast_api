@@ -28,4 +28,4 @@ class ForecastController < ApplicationController
 	 	end
 	 end
 
-	end
+end

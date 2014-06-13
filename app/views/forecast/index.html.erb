@@ -36,8 +36,10 @@
     	<div class="row">
 	    	<div class="col-md-4">
 
+	    <center><div> <%=  %></div></center>
+	    <br>
           <center><i id="icon"  class="wi <%= @forecast.currently.icon %>" ></i></center>
-
+        <br>
           <h3> Current Temperature </h3>
 						<p>	<%= @forecast.currently.apparentTemperature %> °F </p>
 			
@@ -48,51 +50,27 @@
         <hr>
 				<h3> Conditions for the Next Hour </h3>
 						<p>	<%= @forecast.minutely.try :summary %> </p>
-
+		<hr>				
 				<h3> Daily Summary </h3>
 						<p>	<%= @forecast.hourly.summary %> </p>
-
-   
-				
- 		
-				<h3> Conditions for the Next Hour </h3>
-						<p>	<%= @forecast.minutely.try :summary %> </p>
-
-				<h3> Current Temperature </h3>
-						<p>	<%= @forecast.currently.apparentTemperature %> °F </p>
-
-				<h3> Daily Summary </h3>
-						<p>	<%= @forecast.hourly.summary %> </p>
-
-			<h3> Conditions for the Next Hour </h3>
-				<p>	<%= @forecast.minutely.try :summary %> </p>
-
-			<h3> Daily Summary </h3>
-				<p>	<%= @forecast.hourly.summary %> </p>
-
-			<h3> Weekly Summary </h3>
-				<p>	<%= @forecast.daily.summary %> </p>
-
-			<h3> Longitude </h3>
-				<p>	<%= @forecast.longitude %> </p>
-
-			<h3> Latitude </h3>
-				<p>	<%= @forecast.latitude %> </p>
-
-			<h3> Icon </h3>
-				<p>	<%= @forecast.currently.icon %> </p>
-
-		</div>
-
-
+		<hr>			
 				<h3> Weekly Summary </h3>
-						<p>	<%= @forecast.daily.summary %> </p>
+					<p>	<%= @forecast.daily.summary %> </p>
 
 
-=======
+<!--				<h3> Longitude </h3>
+					<p>	<%= @forecast.longitude %> </p>
+
+				<h3> Latitude </h3>
+					<p>	<%= @forecast.latitude %> </p>
+
+				<h3> Icon </h3>
+					<p>	<%= @forecast.currently.icon %> </p>
+-->
+
 
 		</div>
->>>>>>> d3007fc35d22160c1dc3867750387d1d7e49f3a2
+
 			</div>
 		</div>
 	</div>
