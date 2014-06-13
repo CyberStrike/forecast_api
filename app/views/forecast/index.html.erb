@@ -36,14 +36,15 @@
     	<div class="row">
 	    	<div class="col-md-4">
 
-	    <center><div> <%=  %></div></center>
+	    	<h6> Location Name <h6>
 	    <br>
           <center><i id="icon"  class="wi <%= @forecast.currently.icon %>" ></i></center>
         <br>
           <h3> Current Temperature </h3>
 						<p>	<%= @forecast.currently.apparentTemperature %> °F </p>
 			
-			<h3> Current Condition: <%= @forecast.currently.summary %> </h3>       
+			<h3> Current Condition: <%= @forecast.currently.summary %> </h3>  
+			<h2> Precipitation Probability: <%= @forecast.currently.precipProbability*100%> % </h2>      
         <hr>
         		<h3> Country, Timezone </h3>
         				<p>	<%= @forecast.timezone %> </p>
@@ -56,6 +57,8 @@
 		<hr>			
 				<h3> Weekly Summary </h3>
 					<p>	<%= @forecast.daily.summary %> </p>
+
+				
 
 
 <!--				<h3> Longitude </h3>
